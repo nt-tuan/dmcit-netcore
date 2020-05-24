@@ -1,0 +1,14 @@
+﻿Initialize Accounting AccoutingPeriod:
+	Delete all accouting periods
+	Create the the first accounting period whose AccoutingStartTime is null
+	Create continunous accouting period
+
+Open an Accouting Period:
+	Find the opening accouting periods
+	Loop
+	Trigger before accouting period closed event
+		Calculate the report of its periods
+	Close it
+	Open next accounting periods
+	End loop
+

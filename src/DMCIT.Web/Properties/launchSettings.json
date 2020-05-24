@@ -1,0 +1,29 @@
+{
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:57678/",
+      "sslPort": 0
+    }
+  },
+  "profiles": {
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "JWT_SECRET": "ANFLASHGASNGAOMOPWEUSAPOSJY3P93429J39F9",
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    },
+    "DMCIT.Web": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "JWT_SECRET": "ANFLASHGASNGAOMOPWEUSAPOSJY3P93429J39F9",
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "http://localhost:57679/"
+    }
+  }
+}

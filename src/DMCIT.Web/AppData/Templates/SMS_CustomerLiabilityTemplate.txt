@@ -1,0 +1,1 @@
+﻿DOMESCO xin thong bao: vao cuoi ngay {ReceiptDate}, cong no cua KH {Customer} la {AR} VND.

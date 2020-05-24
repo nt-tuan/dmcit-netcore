@@ -1,0 +1,64 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <AssemblyName>DMCIT.Infrastructure</AssemblyName>
+    <PackageId>DMCIT.Infrastructure</PackageId>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="Migrations\20190708051010_add message entities.cs" />
+    <Compile Remove="Migrations\20190708051010_add message entities.Designer.cs" />
+    <Compile Remove="Migrations\20190903020554_add init data.cs" />
+    <Compile Remove="Migrations\20190903020554_add init data.Designer.cs" />
+    <Compile Remove="Migrations\20191120030757_not require customerid in CustomerAR.cs" />
+    <Compile Remove="Migrations\20191120030757_not require customerid in CustomerAR.Designer.cs" />
+    <Compile Remove="Migrations\20191201133541_test.cs" />
+    <Compile Remove="Migrations\20191201133541_test.Designer.cs" />
+    <Compile Remove="Migrations\20191203140646_test.cs" />
+    <Compile Remove="Migrations\20191203140646_test.Designer.cs" />
+    <Compile Remove="Migrations\20200323180540_Add post and support request.cs" />
+    <Compile Remove="Migrations\20200323180540_Add post and support request.Designer.cs" />
+    <Compile Remove="Migrations\20200412120708_the assistant has to be an employee.cs" />
+    <Compile Remove="Migrations\20200412120708_the assistant has to be an employee.Designer.cs" />
+    <Compile Remove="Migrations\20200412122817_categories hierarchy and assistant is an employee constraint.cs" />
+    <Compile Remove="Migrations\20200412122817_categories hierarchy and assistant is an employee constraint.Designer.cs" />
+    <Compile Remove="Migrations\20200412191132_change db logic.cs" />
+    <Compile Remove="Migrations\20200412191132_change db logic.Designer.cs" />
+    <Compile Remove="Migrations\20200412191304_change db logic.cs" />
+    <Compile Remove="Migrations\20200412191304_change db logic.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="4.8.1" />
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="4.3.0" />
+    <PackageReference Include="EFCore.BulkExtensions" Version="2.4.1" />
+    <PackageReference Include="Hangfire.Core" Version="1.7.6" />
+    <PackageReference Include="Microsoft.AspNetCore.App" Version="2.1.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.1.4" PrivateAssets="all">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.1.4" />
+    <PackageReference Include="NPOI" Version="2.4.1" />
+    <PackageReference Include="Quartz.Serialization.Json" Version="3.0.7" />
+    <PackageReference Include="System.ServiceModel.Duplex" Version="4.4.*" />
+    <PackageReference Include="System.ServiceModel.Http" Version="4.4.*" />
+    <PackageReference Include="System.ServiceModel.NetTcp" Version="4.4.*" />
+    <PackageReference Include="System.ServiceModel.Security" Version="4.4.*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DMCIT.Core\DMCIT.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Service Include="{508349b6-6b84-4df5-91f0-309beebad82d}" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="EventHandlers\Cores\" />
+    <Folder Include="Events\DataCollector\" />
+  </ItemGroup>
+</Project>

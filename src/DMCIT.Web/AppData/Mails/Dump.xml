@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Mails>
+  <Mail>
+    <From>tuannt@domesco.com</From>
+    <To>tuannt@domesco.com</To>
+    <!--<Cc>tamnc@domesco.com</Cc> -->
+    <Subject>Test sending mail gui ket qua SMS thanh toan tu {from} den truoc ngay {to}</Subject>
+    <Body>
+      <![CDATA[
+      <div>
+        <h4>Xin chao!</h4>
+        <p>Day la email tu dong khi gui SMS Payment to KH</p>
+        <br />
+        <p>Tran trong</p>
+      </div>
+      ]]>
+    </Body>
+  </Mail>
+</Mails>

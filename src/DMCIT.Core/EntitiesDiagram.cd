@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="DMCIT.Core.Entities.Accounts.AppUser" Collapsed="true">
+    <Position X="6.25" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QIAACAAAAEAAAAAEAACAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Accounts\AppUser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DMCIT.Core.Entities.Messaging.AutoMessageConfig" Collapsed="true">
+    <Position X="16.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAEAgAAgEAAAAAAAAAAAAAAAAgAAAAEQAAABAI=</HashCode>
+      <FileName>Entities\Messaging\AutoMessageConfig.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DMCIT.Core.Entities.Messaging.MessageReceiver">
+    <Position X="9.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAECAAAAIAAAAAAAAAACAAAAJABAAAAAAAKAAA=</HashCode>
+      <FileName>Entities\Messaging\MessageReceiver.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Customer" />
+      <Property Name="Employee" />
+      <Property Name="ReceiverCategory" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="DMCIT.Core.Entities.Messaging.MessageReceiverGroup">
+    <Position X="16.5" Y="17" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEQAAAAAAAAAAAAAQAAAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Messaging\MessageReceiverGroup.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DMCIT.Core.Entities.Messaging.MessageServiceProvider">
+    <Position X="13.5" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAABAAAAAAAAgAQAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Entities\Messaging\MessageServiceProvider.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DMCIT.Core.Entities.Messaging.ReceiverCategory">
+    <Position X="9.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAgAAQAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Messaging\ReceiverCategory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DMCIT.Core.Entities.Messaging.ReceiverProvider">
+    <Position X="13.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAYAAAAAAAAAAEAAAAAAAAACAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Messaging\ReceiverProvider.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="MessageReceiver" />
+      <Property Name="MessageServiceProvider" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="DMCIT.Core.Entities.Messaging.SentMessage">
+    <Position X="16.5" Y="9.5" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="DMCIT.Core.Entities.Messaging.SentMessage.SentMessageStatus" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Entities\Messaging\SentMessage.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AEAQAABEAgAAAAAAAAAAAIAAAAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>Entities\Messaging\SentMessage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DMCIT.Core.Entities.Sales.Customer">
+    <Position X="9.25" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QIAAAAAAAEAAAAAEAAggAAAAAAAAIAACAAAAAABAAAA=</HashCode>
+      <FileName>Entities\Sales\Customer.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Person" />
+      <Property Name="Business" />
+      <Property Name="Distributor" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="DMCIT.Core.Entities.Sales.Distributor">
+    <Position X="9.25" Y="15" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAgAAQAAAIQAAACAAAAIAAAAAA=</HashCode>
+      <FileName>Entities\Sales\Distributor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DMCIT.Core.Entities.HR.Department">
+    <Position X="6.25" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIAAAAIsQAAACAAABIAAAgAAIAAAAAA=</HashCode>
+      <FileName>Entities\HR\Department.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DMCIT.Core.Entities.HR.Employee">
+    <Position X="6.25" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AYAAAAAAAAAAgAAEAAAoAAAAEAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\HR\Employee.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Person" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="DMCIT.Core.Entities.HR.EmployeeJob">
+    <Position X="3.25" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQACAAAAAAQAAAAAAACAAA=</HashCode>
+      <FileName>Entities\HR\EmployeeJob.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Employee" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="DMCIT.Core.Entities.HR.EmployeeJobRequirement">
+    <Position X="3.25" Y="16.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAARAAAAAA=</HashCode>
+      <FileName>Entities\HR\EmployeeJobRequirement.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="EmployeeJob" />
+      <Property Name="JobRequirement" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="DMCIT.Core.Entities.HR.JobRequirement">
+    <Position X="6.25" Y="16.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\HR\JobRequirement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DMCIT.Core.Entities.Messaging.MessageReceiverGroupMessageReceiver">
+    <Position X="9.25" Y="17" Width="1.5" />
+    <AssociationLine Name="MessageReceiver" Type="DMCIT.Core.Entities.Messaging.MessageReceiver" ManuallyRouted="true">
+      <Path>
+        <Point X="9.25" Y="17.512" />
+        <Point X="8.31" Y="17.512" />
+        <Point X="8.31" Y="10.444" />
+        <Point X="9.25" Y="10.444" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAAQAAAAAAAAAAAAAACQAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Messaging\MessageReceiverGroupMessageReceiver.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="MessageReceiver" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="DMCIT.Core.Entities.Core.Person">
+    <Position X="3.25" Y="7.5" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="DMCIT.Core.Entities.Core.Person.PersonGender" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Entities\Core\Person.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAEGAAACAAAICAAAAAAAIAAAIYAAACAAAAIAAAAAg=</HashCode>
+      <FileName>Entities\Core\Person.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Country" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="DMCIT.Core.Entities.Core.Country">
+    <Position X="0.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAgAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Core\Country.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DMCIT.Core.Entities.Core.Business">
+    <Position X="0.75" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAECAAAIAAAAAAAAIAAAIQAMACAAAAIAAAAAA=</HashCode>
+      <FileName>Entities\Core\Business.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Country" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="DMCIT.Core.Entities.Messaging.AutoMessageConfigMessageReceiver">
+    <Position X="13.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQCAAAAAAAAAAAIAAAAAAACAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Messaging\AutoMessageConfigMessageReceiver.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="MessageReceiver" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="DMCIT.Core.Entities.Messaging.AutoMessageConfigProvider">
+    <Position X="16.5" Y="12.5" Width="1.5" />
+    <AssociationLine Name="AutoMessageConfig" Type="DMCIT.Core.Entities.Messaging.AutoMessageConfig" ManuallyRouted="true">
+      <Path>
+        <Point X="16.5" Y="12.987" />
+        <Point X="15.95" Y="12.987" />
+        <Point X="15.95" Y="4.346" />
+        <Point X="16.5" Y="4.346" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAICAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Messaging\AutoMessageConfigProvider.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="AutoMessageConfig" />
+      <Property Name="MessageServiceProvider" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="DMCIT.Core.Entities.Messaging.AutoMessageConfigMessageReceiverGroup">
+    <Position X="16.5" Y="14.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAQAAAAAAIAAAAAAAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Messaging\AutoMessageConfigMessageReceiverGroup.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="AutoMessageConfig" />
+      <Property Name="MessageReceiverGroup" />
+    </ShowAsAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

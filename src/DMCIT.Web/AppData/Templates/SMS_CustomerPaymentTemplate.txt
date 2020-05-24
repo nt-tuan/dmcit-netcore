@@ -1,0 +1,1 @@
+﻿DOMESCO cam on KH {Customer} da TT {PaymentAmount} VND vao ngay {ReceiptDate}. Du no con lai {LiabilityAmount} VND.
