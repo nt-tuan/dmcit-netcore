@@ -394,7 +394,7 @@ namespace DMCIT.Web.Api
                 new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
                 new Claim(ClaimTypes.NameIdentifier, user.Id)
             };
-                
+
                 var key = new SymmetricSecurityKey(ApiConfiguration.GetJWTSecretKey());
                 var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
                 var expires = DateTime.Now.AddDays(Convert.ToDouble(_configuration.JwtExpireDays));

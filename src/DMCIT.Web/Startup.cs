@@ -42,7 +42,7 @@ namespace DMCIT.Web
     {
         const string PROCESS_HUB_PATH = "/processHub";
         const string WORKFLOW_HUB_PATH = "/workflowHub";
-        
+
         public Startup(IConfiguration config, IHostingEnvironment env)
         {
             Configuration = config;
@@ -163,24 +163,23 @@ namespace DMCIT.Web
         }
         private void ConfigHangfire(IServiceCollection services)
         {
-            services.AddHangfireServer();
+            services.AddHangfire(configuration => configuration
+    .SetDataCompatibilityLevel(CompatibilityLevel.Version_170)
 
-            services
-                .AddMvc()
-                .AddJsonOptions(options =>
-                {
-                    options.SerializerSettings.DateTimeZoneHandling = DateTimeZoneHandling.Local;
-                })
-                .AddControllersAsServices()
-                .SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
-            services.Configure<ApiBehaviorOptions>(o =>
-            {
-                o.SuppressModelStateInvalidFilter = true;
-            });
-            services.AddSwaggerGen(c =>
-            {
-                c.SwaggerDoc("v1", new Info { Title = "My API", Version = "v1" });
-            });
+    .UseSimpleAssemblyNameTypeSerializer()
+    .UseRecommendedSerializerSettings()
+    .UseSqlServerStorage(Configuration.GetConnectionString("DefaultConnection"), new SqlServerStorageOptions
+    {
+        CommandBatchMaxTimeout = TimeSpan.FromMinutes(5),
+        SlidingInvisibilityTimeout = TimeSpan.FromMinutes(5),
+        QueuePollInterval = TimeSpan.Zero,
+        UseRecommendedIsolationLevel = true,
+        UsePageLocksOnDequeue = true,
+        DisableGlobalLocks = true
+    }));
+
+            // Add the processing server as IHostedService
+            services.AddHangfireServer();
         }
         private void ConfigSignalR(IServiceCollection services)
         {
